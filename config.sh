@@ -1,3 +1,8 @@
+#!/bin/bash
+
+DIR="$(dirname "$0")"
+LOG_FILE="$DIR/script.log"
+
 API_KEY="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 RECORD_DOMAIN=$(sed 's/.*\.\(.*\..*\)/\1/' <<< "${CERTBOT_DOMAIN}")
